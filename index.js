@@ -4,7 +4,7 @@
 
 let player = prompt("Welcome to 5 Question's Game! Please enter your name here: ", "");
 if (player === null || player === "") {
-    alert("Ok, let`s play Anonimous!");
+    alert("Ok! Let`s play Anonimous!");
 } else {
     alert("Ok, " + player + " this game will be a piece of cake!");
 }
@@ -23,7 +23,7 @@ if (answer1Lower === null || answer1Lower === "") {
     counter = counter + 5;
 }
 
-let answer2 = prompt("What is the name of the longest river in the world?", "");
+let answer2 = prompt("Now every question will give you 10 points! What is the name of the longest river in the world?", "");
 let answer2Lower = answer2.toLowerCase();
 if (answer2Lower === null || answer2Lower === "") {
     alert("I did't receive any response.");
@@ -31,7 +31,7 @@ if (answer2Lower === null || answer2Lower === "") {
     alert("Sorry... Wrong answer but still have " + counter + " points");
 else {
     counter = counter + 10;
-    alert("Very Well! You're stronger than He-man! Take your 10 points master of the universe!");
+    alert("Very Well! You're stronger than He-man! Take your 10 points Master of the universe!");
     alert("You have " + counter + " points!")
 
 }
