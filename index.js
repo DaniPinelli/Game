@@ -12,7 +12,7 @@ if (player === null || player === "") {
 
 let answer1 = prompt("You`re playing by 5 points... Which is the best city in the world?", "");
 let counter = 0;
-let answer1Lower = answer1.toLowerCase();
+let answer1Lower = answer1.toLowerCase().trim();
 if (answer1Lower === null || answer1Lower === "") {
     alert("I did't receive any response.");
 } else if (answer1Lower != "rosario") {
@@ -24,7 +24,7 @@ if (answer1Lower === null || answer1Lower === "") {
 }
 
 let answer2 = prompt("Now every question will give you 10 points! What is the name of the longest river in the world?", "");
-let answer2Lower = answer2.toLowerCase();
+let answer2Lower = answer2.toLowerCase().trim();
 if (answer2Lower === null || answer2Lower === "") {
     alert("I did't receive any response.");
 } else if (answer2Lower != "nilo")
@@ -37,7 +37,7 @@ else {
 }
 
 let answer3 = prompt("What is the country that is shaped like a boot?", "");
-let answer3Lower = answer3.toLowerCase();
+let answer3Lower = answer3.toLowerCase().trim();
 if (answer3Lower === null || answer3Lower === "") {
     alert("I did't receive any response.");
 } else if (answer3Lower != "italy") {
@@ -48,7 +48,7 @@ if (answer3Lower === null || answer3Lower === "") {
 }
 
 let answer4 = prompt("What is the city of skyscrapers?", "");
-let answer4Lower = answer4.toLowerCase();
+let answer4Lower = answer4.toLowerCase().trim();
 if (answer4Lower === null || answer4Lower === "") {
     alert("I did't receive any response.");
 } else if (answer4Lower != "new york") {
@@ -59,7 +59,7 @@ if (answer4Lower === null || answer4Lower === "") {
 }
 
 let answer5 = prompt("What is the most abundant chemical element in the earth's crust?", "");
-let answer5Lower = answer5.toLowerCase();
+let answer5Lower = answer5.toLowerCase().trim();
 if (answer5Lower === null || answer5Lower === "") {
     alert("I did't receive any response. You finish the game with " + counter + " points");
 } else if (answer5Lower != "oxygen") {
